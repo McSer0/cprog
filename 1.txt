@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define Ymap 10
+#define Ymap 7
 #define Xmap 10
 
-char map[Ymap][Xmap];
+char map[5][5];
 
-struct SOb1;
+struct sI;
 
 void initMap();
 void initSOb1();
@@ -15,8 +15,8 @@ void showMap();
 
 int main() {
   initMap();
-  initSOb1();
-  putSOb1();
+  // initSOb1();
+  // putSOb1();
   showMap();
 }
 
@@ -27,8 +27,8 @@ struct SOb1 {
 void initSOb1() {
   si.y = 2;
   si.x = 2;
-  si.wy = 2;
-  si.wx = 2;
+  si.wy = 1;
+  si.wx = 1;
 }
 
 void initMap() {
