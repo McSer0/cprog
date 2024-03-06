@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define Ymap 10
-#define Xmap 10
+#define Ymap 20
+#define Xmap 50
 
 char map[Ymap][Xmap];
 
@@ -50,7 +50,7 @@ void showMap() {
 
 void putSOb1() {
   for (int i = si.y; i < si.y + si.wy; i++) {
-    for (int ii = si.x; ii < si.x + si.wx; ii++) {
+    for (int ii = si.x; ii < si.x + si.wx + 1; ii++) {
       map[i][ii] = '1';
     }
   }
