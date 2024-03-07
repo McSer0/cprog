@@ -6,7 +6,10 @@
 
 char map[Ymap][Xmap];
 
-struct SOb1;
+typedef struct SObject {
+  int y, x, wy, wx;
+} TObject;
+TObject si;
 
 void initMap();
 void initSOb1();
@@ -19,10 +22,6 @@ int main() {
   putSOb1();
   showMap();
 }
-
-struct SOb1 {
-  int y, x, wy, wx;
-} si;
 
 void initSOb1() {
   si.y = 2;
